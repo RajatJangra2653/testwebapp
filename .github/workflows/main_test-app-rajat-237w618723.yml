@@ -15,5 +15,4 @@ jobs:
       - name: Deploy
         run: |
           az login -u ${{ secrets.AZURE_USERNAME }} -p ${{ secrets.AZURE_PASSWORD }} --tenant ${{ secrets.AZURE_TENANT_ID }}
-          
           az webapp up --name test-app-rajat-237w618723 --resource-group Agentic-AI-RG
